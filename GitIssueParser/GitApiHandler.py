@@ -41,15 +41,15 @@ def parseResultAndGetIssueCounts(results):
     :param results:
     :return: dictionary issue duration and their counts
     """
-
-
-    if not results:
-        return {}
     issueCounts={}
     # Setting Defaults
     issueCounts['Last 24 hours']=0
     issueCounts['Between last 24 hours and last 7 days']=0
     issueCounts['More than 7 days ago']=0
+
+
+    if not results:
+        return issueCounts
 
     for result in results:
         # Checking for open issues
