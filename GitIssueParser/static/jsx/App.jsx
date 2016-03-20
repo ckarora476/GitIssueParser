@@ -5,7 +5,7 @@ var request = require("superagent")
 var GitIssueTable = require("./GitIssueTable.jsx");
 var Loader = require('react-loader');
 require("./../css/app.css");
-var baseURL = "http://localhost:5000/"
+var baseURL = "https://gitissueparser.herokuapp.com/"
 var GitIssueParserApp = React.createClass({
 	getInitialState: function() {
 		return ({url: "", "table_data": {}, "table_visible": false, loaded: true,error:false,errorMessage:""})
