@@ -4,7 +4,7 @@
   "description": "Programming Assignment",
   "main": "index.js",
   "scripts": {
-     "start": "pip install -r requirements.txt;NODE_ENV=production webpack -p;gunicorn -w 4 -b 0.0.0.0:$PORT runserver:app"
+     "start": "pip install -r requirements.txt;NODE_ENV=production webpack -p ;gunicorn -w 4 -b 0.0.0.0:$PORT runserver:app"
   },
   "repository": {
     "type": "git",
