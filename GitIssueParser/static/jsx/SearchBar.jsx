@@ -10,7 +10,7 @@ var SearchBar = React.createClass({
 	handleOnSubmit: function() {
 		 this.props.handleOnSubmit(this.state.value)
 	},
-	handleChange() {
+	handleChange: function() {
 		this.setState({value: this.refs.input.getValue()});
 	},
 	render: function() {

@@ -1,10 +1,10 @@
 {
-  "name": "Git Issue Parser",
+  "name": "gitissueparser",
   "version": "1.0.0",
   "description": "Programming Assignment",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "deploy": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",
